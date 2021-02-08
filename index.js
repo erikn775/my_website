@@ -5,6 +5,8 @@ const about = document.getElementById("about")
 const gitButton = document.getElementsByClassName("fa fa-github")[0]
 const linkedIn = document.getElementsByClassName("fa fa-linkedin")[0]
 const repoButton = document.getElementById("here_link")
+const projectsWindow = document.getElementsByClassName("grid-item-1")[0]
+const blogWindow = document.getElementsByClassName("grid-item-2")[0]
 const projects = document.getElementsByClassName("grid-item-1")[0]
 const blog = document.getElementsByClassName("grid-item-2")[0]
 
@@ -61,10 +63,18 @@ repoButton.addEventListener('click', function() {
     gitRepoRedirect();
 })
 
-projects.addEventListener('click', function() {
-    projects.style.gridRow = "2 / 7"
+projectsWindow.addEventListener('mouseover', function(e) {
+    e.target.style.gridRow = "2 / 7"
 })
 
-blog.addEventListener('click', function() {
-    blog.style.gridRow = "2 / 7"
+blogWindow.addEventListener('mouseover', function(e) {
+    e.target.style.gridRow = "2 / 7"
+})
+
+projectsWindow.addEventListener('mouseout', function(e) {
+    e.target.style.gridRow = "5 / 7"
+})
+
+blog.addEventListener('mouseout', function(e) {
+    e.target.style.gridRow = "5 / 7"
 })
