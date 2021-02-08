@@ -5,6 +5,8 @@ const about = document.getElementById("about")
 const gitButton = document.getElementsByClassName("fa fa-github")[0]
 const linkedIn = document.getElementsByClassName("fa fa-linkedin")[0]
 const repoButton = document.getElementById("here_link")
+const projects = document.getElementsByClassName("grid-item-1")[0]
+const blog = document.getElementsByClassName("grid-item-2")[0]
 
 href="https://github.com/erikn775/my_website"
 function div_show() {
@@ -57,4 +59,12 @@ linkedIn.addEventListener('click', function() {
 
 repoButton.addEventListener('click', function() {
     gitRepoRedirect();
+})
+
+projects.addEventListener('click', function() {
+    projects.style.gridRow = "2 / 7"
+})
+
+blog.addEventListener('click', function() {
+    blog.style.gridRow = "2 / 7"
 })

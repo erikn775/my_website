@@ -173,6 +173,7 @@ body {
     grid-row: 5 / 7;
     border-radius: 10px;
     color: white;
+    z-index: 950;
 }
 .grid-item-2 {
     background-color:  rgb(55, 59, 70);
@@ -184,6 +185,7 @@ body {
     grid-row: 5 / 7 ;
     border-radius: 10px;
     color: white;
+    z-index: 950;
 }
 
 .grid-item-3 {
@@ -202,6 +204,7 @@ body {
     color: white;
     grid-column: 2 / 4;
     grid-row: 2;
+    z-index: 900;
 }
 
 #here_link {
@@ -237,7 +240,10 @@ img#face {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    z-index: 900;
 }
+
+
 
 
 
