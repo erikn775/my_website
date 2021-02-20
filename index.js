@@ -111,3 +111,45 @@ const projectTitle6 = document.querySelector("#project-6")
             location.href = "https://github.com/erikn775"
         }
 });
+
+const blogTitle1 = document.querySelector("#blog-1")
+    .addEventListener('click', function(){
+        if (window.confirm('Redirecting to Medium')){
+            location.href = "https://medium.com/@erikn775/what-is-params-in-sinatra-rails-fd2b67d5ae7e"
+        }
+});
+
+const blogTitle2 = document.querySelector("#blog-2")
+    .addEventListener('click', function(){
+        if (window.confirm('Redirecting to Medium')){
+            location.href = "https://medium.com/@erikn775/rails-eachvalidator-7ce96abe2c5"
+        }
+});
+
+const blogTitle3 = document.querySelector("#blog-3")
+    .addEventListener('click', function(){
+        if (window.confirm('Redirecting to Medium')){
+            location.href = "https://medium.com/@erikn775/callback-functions-2582a812ac62"
+        }
+});
+
+const blogTitle4 = document.querySelector("#blog-4")
+    .addEventListener('click', function(){
+        if (window.confirm('Redirecting to Medium')){
+            location.href = "https://medium.com/@erikn775/why-did-you-get-into-software-engineering-52d6a03bbbe1"
+        }
+});
+
+const blogTitle5 = document.querySelector("#blog-5")
+    .addEventListener('click', function(){
+        if (window.confirm('Redirecting to Medium')){
+            location.href = ""
+        }
+});
+
+const blogTitle6 = document.querySelector("#blog-6")
+    .addEventListener('click', function(){
+        if (window.confirm('Redirecting to Medium')){
+            location.href = ""
+        }
+});
