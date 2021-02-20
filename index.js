@@ -1,80 +1,65 @@
-const conButton = document.getElementById("contact")
-const form = document.getElementById("popupContact")
-const xButton = document.getElementById("close")
-const about = document.getElementById("about")
-const gitButton = document.getElementsByClassName("fa fa-github")[0]
-const linkedIn = document.getElementsByClassName("fa fa-linkedin")[0]
-const repoButton = document.getElementById("here_link")
-const projectsWindow = document.getElementsByClassName("grid-item-1")[0]
-const blogWindow = document.getElementsByClassName("grid-item-2")[0]
-const projects = document.getElementsByClassName("grid-item-1")[0]
-const blog = document.getElementsByClassName("grid-item-2")[0]
+const projectSection = document.querySelector(".projects-section");
+const blogSection = document.querySelector(".blogs-section");
+const resumeSection = document.querySelector(".resume-section");
+const resumeModal = document.querySelector("#resumeModal");
+const next = document.querySelector(".next");
+const previous = document.querySelector(".previous");
 
-href="https://github.com/erikn775/my_website"
-function div_show() {
-    document.getElementById('popupContact').style.display = "block";
+function projectDisplay(){
+    projectSection.style.display = 'block';
+    resumeSection.style.display = 'none';
+    blogSection.style.display = 'none';
 }
 
-function div_hide() {
-    document.getElementById('popupContact').style.display = "none";
+function blogDisplay(){
+    projectSection.style.display = 'none';
+    resumeSection.style.display = 'none';
+    blogSection.style.display = 'block';
 }
 
-function moreOpacity() {
-    let image = document.getElementById("scroll-image")
-    image.style.opacity = "50%";
+function displayResume(){
+    projectSection.style.display = 'none';
+    resumeSection.style.display = 'block';
+    blogSection.style.display = 'none';
 }
 
-function lessOpacity() {
-    let image = document.getElementById("scroll-image")
-    image.style.opacity = "100%";
-}
 
-function gitRedirect() {
-    location.replace("https://github.com/erikn775")
-}
 
-function linkedInRedirect() {
-    location.replace("https://www.linkedin.com/in/erik-nielsen-18bb43205")
-}
+resumeSection.addEventListener('click', () => resumeModal.style.display = 'block')
 
-function gitRepoRedirect() {
-    location.replace("https://github.com/erikn775/my_website")
-}
+const resumeClose = document.querySelector(".close")
+    .addEventListener('click', () => resumeModal.style.display = 'none');
 
-conButton.addEventListener('click', function() {
-    div_show();
-    moreOpacity();
+const projectNav = document.querySelector("#projects-side")
+    .addEventListener('click', projectDisplay);
+
+const blogNav = document.querySelector("#blog-side")
+    .addEventListener('click', blogDisplay);
+
+const resumeNav = document.querySelector("#resume-side")
+    .addEventListener('click', displayResume);
+
+next.addEventListener('click', function() {
+    
+    if(projectSection.style.display === 'block' || projectSection.style.display === ''){
+        blogDisplay();
+    }
+    else if(blogSection.style.display === 'block' || blogSection.style.display === ''){
+        displayResume();
+    }
+    else{
+        projectDisplay();
+    }
 })
 
-xButton.addEventListener('click', function() {
-    div_hide();
-    lessOpacity();
-})
-
-gitButton.addEventListener('click', function() {
-    gitRedirect();
-})
-
-linkedIn.addEventListener('click', function() {
-    linkedInRedirect();
-})
-
-repoButton.addEventListener('click', function() {
-    gitRepoRedirect();
-})
-
-projectsWindow.addEventListener('mouseover', function(e) {
-    e.target.style.gridRow = "2 / 7"
-})
-
-blogWindow.addEventListener('mouseover', function(e) {
-    e.target.style.gridRow = "2 / 7"
-})
-
-projectsWindow.addEventListener('mouseout', function(e) {
-    e.target.style.gridRow = "5 / 7"
-})
-
-blog.addEventListener('mouseout', function(e) {
-    e.target.style.gridRow = "5 / 7"
+previous.addEventListener('click', function() {
+    if(projectSection.style.display === 'block' || projectSection.style.display === ''){
+        displayResume();
+    }
+    else if(resumeSection.style.display === 'block' || resumeSection.style.display === ''){
+        blogDisplay();
+    }
+    else{
+        projectDisplay();
+    }
 })
