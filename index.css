@@ -26,6 +26,7 @@
 .heading p {
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 15px;
 }
 
 .fa {
@@ -134,6 +135,7 @@ a:hover {
   grid-auto-rows: minmax(100px, 150px);
   background-color: white;
   gap: 10px;
+  
 }
 
 .grid-container-resume {
@@ -156,7 +158,6 @@ a:hover {
   background-color: whitesmoke;
   grid-column: 1;
   grid-row: 1;
-  
 }
 
 .grid-item-1 p {
@@ -178,6 +179,7 @@ a:hover {
   float: right;
   width: 50%;
   text-align: left;
+  cursor: pointer;
 }
 
 .grid-item-2 {
@@ -203,6 +205,7 @@ a:hover {
   float: right;
   width: 50%;
   text-align: left;
+  cursor: pointer;
 }
 
 .grid-item-3 {
@@ -229,6 +232,7 @@ a:hover {
   float: right;
   width: 50%;
   text-align: left;
+  cursor: pointer;
 }
 
 .grid-item-4 {
@@ -256,6 +260,7 @@ a:hover {
   float: right;
   width: 50%;
   text-align: left;
+  cursor: pointer;
 }
 
 .grid-item-5 {
@@ -265,6 +270,7 @@ a:hover {
   border-radius: 10px;
 
 }
+
 
 .grid-item-5 p {
   margin-top: 2px;
@@ -283,6 +289,7 @@ a:hover {
   float: right;
   width: 50%;
   text-align: left;
+  cursor: pointer;
 }
 
 .grid-item-6 {
@@ -310,6 +317,7 @@ a:hover {
   float: right;
   width: 50%;
   text-align: left;
+  cursor: pointer;
 }
 
 .projects-div h3 {
