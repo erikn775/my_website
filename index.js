@@ -149,7 +149,7 @@ const blogTitle5 = document.querySelector("#blog-5")
 
 const blogTitle6 = document.querySelector("#blog-6")
     .addEventListener('click', function(){
-        if (window.confirm('Redirecting to Medium')){
-            location.href = ""
+        if (window.confirm('Redirecting to Blogger')){
+            location.href = "https://erikprogramming.blogspot.com/2021/02/my-coding-bootcamp-experience.html"
         }
 });
