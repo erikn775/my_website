@@ -87,14 +87,14 @@ const projectTitle2 = document.querySelector("#project-2")
 const projectTitle3 = document.querySelector("#project-3")
     .addEventListener('click', function(){
         if (window.confirm('Redirecting to Github')){
-            location.href = "https://github.com/erikn775"
+            location.href = "https://github.com/erikn775/emojiGame"
         }
 });
 
 const projectTitle4 = document.querySelector("#project-4")
     .addEventListener('click', function(){
         if (window.confirm('Redirecting to Github')){
-            location.href = "https://github.com/erikn775"
+            location.href = "https://github.com/erikn775/CLI-Phase-1-Project"
         }
 });
 
