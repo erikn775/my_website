@@ -101,7 +101,7 @@ const projectTitle4 = document.querySelector("#project-4")
 const projectTitle5 = document.querySelector("#project-5")
     .addEventListener('click', function(){
         if (window.confirm('Redirecting to Github')){
-            location.href = "https://github.com/erikn775"
+            location.href = "https://github.com/erikn775/casino_game"
         }
 });
 
