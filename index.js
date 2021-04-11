@@ -142,14 +142,14 @@ const blogTitle4 = document.querySelector("#blog-4")
 
 const blogTitle5 = document.querySelector("#blog-5")
     .addEventListener('click', function(){
-        if (window.confirm('Redirecting to Medium')){
-            location.href = ""
+        if (window.confirm('Redirecting to Blogger')){
+            location.href = "https://erikprogramming.blogspot.com/2021/02/my-coding-bootcamp-experience.html"
         }
 });
 
 const blogTitle6 = document.querySelector("#blog-6")
     .addEventListener('click', function(){
-        if (window.confirm('Redirecting to Blogger')){
-            location.href = "https://erikprogramming.blogspot.com/2021/02/my-coding-bootcamp-experience.html"
+        if (window.confirm('Redirecting to Medium')){
+            location.href = "https://medium.com/@erikn775/class-vs-functional-components-in-react-d618cb91c33c"
         }
 });
