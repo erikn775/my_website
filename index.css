@@ -78,10 +78,11 @@ img#face {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #54B689;
+  background-image: url(https://images.photowall.com/products/58341/foggy-forest-4.jpg?h=699&q=85);
+  box-shadow:inset 0 0 0 2000px rgba(255, 0, 40, 0.5);
   overflow-x: hidden;
   padding-top: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   font-family: sans-serif;
 }
 
