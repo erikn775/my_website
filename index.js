@@ -68,7 +68,7 @@ const linkedin = document.querySelector("#linked")
     .addEventListener('click', () => location.href = "https://www.linkedin.com/in/erik-nielsen-18bb43205");
 
 const git = document.querySelector("#git")
-    .addEventListener('click', () => location.href = "https://github.com/erikn775?tab=projects")
+    .addEventListener('click', () => location.href = "https://github.com/erikn775")
 
 const projectTitle1 = document.querySelector("#project-1")
     .addEventListener('click', function(){
@@ -94,7 +94,7 @@ const projectTitle3 = document.querySelector("#project-3")
 const projectTitle4 = document.querySelector("#project-4")
     .addEventListener('click', function(){
         if (window.confirm('Redirecting to Github')){
-            location.href = "https://github.com/erikn775/CLI-Phase-1-Project"
+            location.href = "https://github.com/erikn775/react_matching_game"
         }
 });
 
